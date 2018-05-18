@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en-EN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="iLearn is an application built on top of the Django framework focused on sharing and create learning content">
+    <meta name="keywords" content="learning django github piedimonte learn videos books free education free-education">
+    <meta rel="author" content="http://github.com/mynameismaz">
+    <link rel="canonical" href="">
+    {%load staticfiles%}
+    <link rel="stylesheet" href="{% static 'books/style.css' %}">
+    {%block include_css%}{%endblock%}
+    <title>{%block title%}iLearn{%endblock%}</title>
+</head>
+<body>
+    <header class="iLearn-navbar">
+        <nav>
+            <ul>
+                <li><a href="{%url 'books:index'%}">iLearn</a></li>
+                {%if not user.is_authenticated %}
+                    <li><a href="{%url 'users:login'%}">Login</a></li>
+                    <li><a href="{%url 'users:add-user'%}">Sign In</a></li>
+                {%else%}
+                    <li><a href="{%url 'books:add-book'%}">Add Book</a></li>
+                    <li><a href="{%url 'books:add-author'%}">Add Author</a></li>
+                    <li class="logged-as">Logged as <b>{{user}}</b></li>
+                    <li><a href="{%url 'users:logout-user'%}">Logout</a></li>
+                {%endif%}
+            </ul>
+        </nav>
+    </header>
+
+    <section class="iLearn">
+        {%block body%}
+        {%endblock%}
+    </section>
+</body>
+</html>

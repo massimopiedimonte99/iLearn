@@ -1,0 +1,25 @@
+.iLearn a {
+    text-decoration: none;
+}
+
+.iLearn .iLearn-detail h1  {
+    font-size: 20pt;
+}
+
+.iLearn .iLearn-detail {
+    padding: 5px;
+}
+
+.iLearn .iLearn-detail .iLearn-book-cover {
+    width: 200px;
+    height: 200px;
+    -webkit-background-size: cover;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+.iLearn .iLearn-detail .iLearn-book-isbn {
+    margin: 6px 0;
+    color: #3e3e3e;
+}

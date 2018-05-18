@@ -1,0 +1,58 @@
+.iLearn {}
+
+.iLearn .iLearn-books {
+    padding: 10px;
+}
+
+.iLearn .iLearn-books a {
+    text-decoration: none;
+}
+
+.iLearn .iLearn-books .iLearn-book {
+    display: inline-block;
+    margin-bottom: 10px;
+}
+
+.iLearn .iLearn-books .iLearn-book {
+    width: 200px;
+    padding: 5px;
+}
+
+.iLearn .iLearn-books h1  {
+    font-size: 20pt;
+}
+
+.iLearn .iLearn-books .iLearn-book .iLearn-book-cover {
+    width: 100%;
+    height: 200px;
+    -webkit-background-size: cover;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+.iLearn .iLearn-books .iLearn-book .iLearn-book-author,
+.iLearn .iLearn-books .iLearn-book .iLearn-book-isbn,
+.iLearn .iLearn-books .iLearn-book .iLearn-book-operations {
+    margin: 6px 0;
+}
+
+.iLearn .iLearn-books .iLearn-book .iLearn-book-author span,
+.iLearn .iLearn-books .iLearn-book .iLearn-book-isbn span,
+.iLearn .iLearn-books .iLearn-book .iLearn-book-operations a {
+    color: #3e3e3e;
+}
+
+.iLearn .iLearn-books .iLearn-book .iLearn-book-author {
+    /**/
+}
+
+.iLearn .iLearn-books .iLearn-book .iLearn-book-isbn {
+    /**/
+}
+
+.iLearn .iLearn-books .iLearn-book .iLearn-book-operations {
+    margin: 9px 0;
+    text-transform: uppercase;
+    font-weight: bold;
+}
