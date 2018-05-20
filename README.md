@@ -7,7 +7,7 @@ Django application, create an account, publish your books, edit your creations a
 
 ## Built With
 
-* [Django](https://www.djangoproject.com/) - The game engine used to build the gravity simulation
+* [Django](https://www.djangoproject.com/) - The web framework used to build the user interaction
 
 ## License
 
